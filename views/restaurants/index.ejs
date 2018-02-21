@@ -7,6 +7,8 @@
   <body>
     <div class="container">
       </div>
+      <div id="map"></div>
+
       <div class="info">
         <h3>List all restaurants</h3>
         <a href="/new">Create new restaurant</a>
@@ -29,6 +31,11 @@
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbBJPvYIaR5ozIx_0-uWiGeO9cK4IxHww">
   </script>
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+  var myRestaurants = <%- JSON.stringify(restaurants) %>;
+  </script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="/javascripts/main.js"></script>
+  <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB94hT0Pj7tDkkLdNHLcSsWhDEoaFdWZSs">
+  </script>
 </html>

@@ -7,8 +7,8 @@ router.route('/')
   .get((req, res, next) => {
     Restaurant.find((error, restaurants) => {
       error ? next(error)
-	     :  res.render('restaurants/index', { restaurants })
-	  })
+        :  res.render('restaurants/index', { restaurants })
+    })
   })
   .post((req, res, next) => {
   // Get Params from POST
